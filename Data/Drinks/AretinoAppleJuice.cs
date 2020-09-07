@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Author: Braden Tinder
+ * Class: AretinoAppleJuice.cs
+ * Purpose: create an apple juice object
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using BleakwindBuffet.Data.Enums;
