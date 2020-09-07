@@ -5,6 +5,7 @@
  */
 using Xunit;
 
+using System.Collections.Generic;
 using BleakwindBuffet.Data;
 using BleakwindBuffet.Data.Enums;
 using BleakwindBuffet.Data.Drinks;
@@ -76,9 +77,10 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
         {
             AretinoAppleJuice apple = new AretinoAppleJuice();
             apple.Ice = includeIce;
+            List<string> list = apple.SpecialInstructions;
 
-            if (includeIce) Assert.Equal("Add ice", apple.SpecialInstructions[0]);
-            else Assert.Equal("", apple.SpecialInstructions[0]);
+            if (includeIce) Assert.Equal("Add ice", list[0]);
+            else Assert.Empty(list);
         }
 
         [Theory]

@@ -13,7 +13,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// sets the private fields to their default values
         /// </summary>
-        private bool ice = false;
+        private bool ice = true;
         private Size size = Size.Small;
         private SodaFlavor flavor = SodaFlavor.Cherry;
 
@@ -93,9 +93,9 @@ namespace BleakwindBuffet.Data.Drinks
             get 
             {
                 List<string> list = new List<string>();
-                if (Ice)
+                if (!Ice)
                 {
-                    list.Add("Add ice");
+                    list.Add("Hold ice");
                 }
 
                 return list;

@@ -124,6 +124,7 @@ namespace BleakwindBuffet.Data.Drinks
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(Size);
+            if (Decaf) sb.Append(" Decaf");
             sb.Append(" Candlehearth Coffee");
             return sb.ToString();
         }
