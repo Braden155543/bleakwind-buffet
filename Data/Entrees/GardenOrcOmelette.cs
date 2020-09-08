@@ -36,7 +36,7 @@ namespace BleakwindBuffet.Data.Entrees
                 List<string> list = new List<string>();
                 if (!Brocoli)
                 {
-                    list.Add("Hold brocoli");
+                    list.Add("Hold broccoli");
                 }
                 if (!Mushrooms)
                 {

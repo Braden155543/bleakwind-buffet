@@ -22,7 +22,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Contains the special instructions for the order
         /// </summary>
-        public List<string> SpecialInstructions { get; }
+        public List<string> SpecialInstructions { get { return new List<string>(); } }
 
         /// <summary>
         /// Function that returns the name of the entree
