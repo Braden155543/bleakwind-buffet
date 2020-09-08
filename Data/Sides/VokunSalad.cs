@@ -30,10 +30,11 @@ namespace BleakwindBuffet.Data.Sides
                 {
                     return 1.28;
                 }
-                else
+                else if (size == Size.Large)
                 {
                     return 1.82;
                 }
+                else throw new NotImplementedException($"{size} is not small, medium or large");
             }
         }
 
@@ -52,10 +53,11 @@ namespace BleakwindBuffet.Data.Sides
                 {
                     return 52;
                 }
-                else
+                else if (size == Size.Large)
                 {
                     return 73;
                 }
+                else throw new NotImplementedException($"{size} is not small, medium or large");
             }
         }
 
