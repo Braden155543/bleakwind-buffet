@@ -115,12 +115,21 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
             burger.Pickle = includePickle;
             burger.Cheese = includeCheese;
 
-
+            if (!includeBun && !includeKetchup && !includeMustard && !includePickle && !includeCheese)
+            {
+                Assert.Equal("Hold bun", burger.SpecialInstructions[0]);
+                Assert.Equal("Hold ketchup", burger.SpecialInstructions[1]);
+                Assert.Equal("Hold mustard", burger.SpecialInstructions[2]);
+                Assert.Equal("Hold pickle", burger.SpecialInstructions[3]);
+                Assert.Equal("Hold cheese", burger.SpecialInstructions[4]);
+            }
         }
 
         [Fact]
         public void ShouldReturnCorrectToString()
         {
+            Briarheart burger = new Briarheart();
+            Assert.Equal("Briarheart Burger", burger.ToString());
         }
     }
 }
